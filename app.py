@@ -13,7 +13,7 @@ dynamodb_table = os.getenv('DYNAMODB_TABLE', DEFAULT_DYNAMODB_TABLE)
 s3_bucket = os.getenv('S3_BUCKET', DEFAULT_S3_BUCKET)
 
 # AWS 클라이언트 설정
-dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
+dynamodb = boto3.resource('dynamodb', region_name='ap-northeast-2')
 s3 = boto3.client('s3')
 
 # 홈 페이지

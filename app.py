@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for, flash
 import boto3
 from botocore.exceptions import NoCredentialsError, ClientError
 import os
+import uuid
 
 app = Flask(__name__)
 app.secret_key = 'IGRUS_CC_STUDY'

@@ -4,6 +4,7 @@ from botocore.exceptions import NoCredentialsError, ClientError
 import os
 
 app = Flask(__name__)
+app.secret_key = 'IGRUS_CC_STUDY
 
 # 기본 설정을 제거
 DEFAULT_DYNAMODB_TABLE = None
